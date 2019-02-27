@@ -1,0 +1,59 @@
+.masthead {
+	z-index: 1;
+	background-color: #fff;
+
+	.header-text {
+		margin-left: 40px;
+		position: relative;
+
+		&::before {
+			content:'';
+		  	background-color: rgb(230, 230, 230);
+		  	position: absolute;
+		  	left: -28px;
+		  	top: 2px;
+		  	width: 1px;
+		  	height: 44px;
+		}
+	}
+}
+
+.wrap__header--image {
+	position: relative;
+	.wrap-image {
+		position: relative;
+    	top: -74px;
+    	z-index: -1;
+	}
+
+    .image-content {
+    	position: absolute;
+    	top: 6em;
+    	left: 34em;
+		z-index: 2;
+		color: #fff;
+
+		h1 {
+			font-size: 36px;
+			line-height: 48px;
+		}
+
+		.destiny {
+			display: flex;
+    		justify-content: space-between;
+    		margin-top: 45px;
+
+			span {
+				position: relative;
+
+				&:last-child {
+					margin-right: 50px;
+				}
+
+				&:first-child {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}

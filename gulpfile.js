@@ -5,6 +5,7 @@ var gulp = require("gulp"),
     sm = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
     include = require('gulp-include'),
+    rigger = require('gulp-rigger'),
     /* Preprocessor */
     babel = require('gulp-babel'),
     pug = require("gulp-pug"),
@@ -21,7 +22,8 @@ var gulp = require("gulp"),
 
 var path = {
     src: {
-        html: './dev/pug/*.pug',
+        // html: './dev/pug/*.pug',
+        html: './dev/*.html',
         css: {
             app: './dev/assets/scss/app.scss',
             vendor: './dev/assets/scss/vendor.scss'
@@ -34,6 +36,7 @@ var path = {
             base: {
                 jpg: './dev/assets/images/**/*.jpg',
                 png: './dev/assets/images/**/*.png',
+                svg: './dev/assets/images/**/*.svg'
             },
             jqueryui: './node_modules/jquery-ui/themes/base/images/*.png',
             fancybox: './node_modules/fancybox/dist/img/*.*',
@@ -74,7 +77,7 @@ gulp.task('babel:vendor', () =>
         .pipe(gulp.dest(path.dist.js))
 );
 
-gulp.task('css:vendor', () => 
+gulp.task('css:vendor', () =>
     gulp.src(path.src.css.vendor)
         .pipe(plumber())
         .pipe(sm.init())
@@ -100,6 +103,7 @@ gulp.task('images', function() {
     gulp.src([
         path.src.images.base.jpg,
         path.src.images.base.png,
+        path.src.images.base.svg,
         path.src.images.jqueryui,
         path.src.images.fancybox,
         path.src.images.slick
@@ -119,7 +123,7 @@ gulp.task('babel', () =>
         .pipe(gulp.dest(path.dist.js))
 );
 
-gulp.task('sass', () => 
+gulp.task('sass', () =>
     gulp.src(path.src.css.app)
         .pipe(plumber())
         .pipe(sm.init())
@@ -131,15 +135,21 @@ gulp.task('sass', () =>
         .pipe(gulp.dest(path.dist.css))
 );
 
-gulp.task('pug', () => 
-	gulp.src(path.src.html)
-        .pipe(plumber())
-        .pipe(pug({
-            pretty: true
-        }))
-        .pipe(htmlmin({ collapseWhitespace: true }))
+// gulp.task('pug', () =>
+// 	gulp.src(path.src.html)
+//         .pipe(plumber())
+//         .pipe(pug({
+//             pretty: true
+//         }))
+//         .pipe(htmlmin({ collapseWhitespace: true }))
+//         .pipe(gulp.dest(path.dist.html))
+// );
+
+gulp.task('html:build', function () {
+    return gulp.src(path.src.html)
+        .pipe(rigger())
         .pipe(gulp.dest(path.dist.html))
-);
+});
 
 gulp.task('svg', function() {
     gulp.src(path.src.images.svg)
@@ -174,7 +184,12 @@ gulp.task('svg', function() {
 
 gulp.task('build', [
     'fonts:slick',
-    'fonts:fa'
+    'fonts:fa',
+    'html:build',
+    'sass',
+    'svg',
+    'babel',
+    'images'
 ]);
 
 gulp.task('watch', () => {
@@ -191,4 +206,4 @@ gulp.task('watch', () => {
 	}
 )
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', ['build',  'watch']);
