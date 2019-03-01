@@ -16,14 +16,15 @@
 	}
 
 	.header-text {
-		margin-left: 40px;
+		margin-left: 30px;
+		padding: 0 10px;
 		position: relative;
 
 		&::before {
 			content:'';
 		  	background-color: rgb(230, 230, 230);
 		  	position: absolute;
-		  	left: -28px;
+		  	left: -19px;
 		  	top: 2px;
 		  	width: 1px;
 		  	height: 44px;
@@ -76,5 +77,5 @@
 }
 
 .mastfooter {
-	border-top: 1px solid #777;
+	border-top: 1px solid #e6e6e6;
 }
