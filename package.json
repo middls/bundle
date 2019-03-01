@@ -4,14 +4,14 @@
   "description": "Frontend boilerplate",
   "author": "Ushakov Kirill",
   "license": "Apache License",
-  "homepage": "https://github.com/gPaxbit/affetta-bundle#readme",
+  "homepage": "https://github.com/middls/bundle.git#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://affetta@bitbucket.org/affetta/bundle.git"
+    "url": "git+https://github.com/middls/bundle.git"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -40,11 +40,14 @@
   "dependencies": {
     "bootstrap": "^4.1.3",
     "font-awesome": "^4.7.0",
+    "gulp-rigger": "^0.5.8",
     "jquery": "^3.3.1",
     "jquery-ui": "^1.12.1",
     "jquery-ui-touch-punch": "^0.2.3",
     "jquery.maskedinput": "^1.4.1",
+    "phantomjs-prebuilt": "^2.1.16",
     "popper.js": "^1.14.4",
+    "rigger": "^1.0.0",
     "slick-carousel": "^1.8.1"
   }
 }

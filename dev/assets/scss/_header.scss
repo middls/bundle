@@ -1,0 +1,80 @@
+.masthead,
+.mastfooter {
+	z-index: 1;
+	background-color: #fff;
+
+	.navbar {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.navbar-brand {
+		width: 215px;
+		height:45px;
+		background: url('../images/logo-header.png') 50% 50% no-repeat;
+	}
+
+	.header-text {
+		margin-left: 40px;
+		position: relative;
+
+		&::before {
+			content:'';
+		  	background-color: rgb(230, 230, 230);
+		  	position: absolute;
+		  	left: -28px;
+		  	top: 2px;
+		  	width: 1px;
+		  	height: 44px;
+		}
+	}
+
+	.navbar-nav {
+	    width: 50%;
+    	justify-content: space-between;
+	}
+}
+
+.wrap__header--image {
+	position: relative;
+	.wrap-image {
+		min-height: 411px;
+		background: url('../images/header-image.jpg') 0 97% no-repeat;
+	}
+
+    .image-content {
+    	position: absolute;
+    	top: 5.5em;
+    	left: 35em;
+		z-index: 2;
+		color: #fff;
+
+		h1 {
+			font-size: 36px;
+			line-height: 48px;
+		}
+
+		.destiny {
+			display: flex;
+    		justify-content: space-between;
+    		margin-top: 45px;
+
+			span {
+				position: relative;
+
+				&:last-child {
+					margin-right: 50px;
+				}
+
+				&:first-child {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}
+
+.mastfooter {
+	border-top: 1px solid #777;
+}
