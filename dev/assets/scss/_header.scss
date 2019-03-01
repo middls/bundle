@@ -41,17 +41,12 @@
 	.wrap-image {
 		min-height: 411px;
 		background: url('../images/header-image.jpg') 0 97% no-repeat;
-		position: relative;
-    	top: -74px;
-    	z-index: -1;
 	}
 
     .image-content {
     	position: absolute;
     	top: 5.5em;
     	left: 35em;
-    	top: 6em;
-    	left: 34em;
 		z-index: 2;
 		color: #fff;
 
