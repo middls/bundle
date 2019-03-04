@@ -1,5 +1,5 @@
 .how-is-working {
-	padding-bottom: 30px;
+	padding: 50px 0;
 	.title-block {
 		display: flex;
 		justify-content: center;
@@ -15,22 +15,21 @@
 	}
 
 	.container-criteria {
-		padding: 40px 0;
+		margin-top: 30px;
+		padding: 40px 53px;
 		background-color:#fff;
-		-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.28);
-		-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.28);
-		box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.28);
+		-webkit-box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.05);
+		-moz-box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.05);
+		box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.05);
 		.description-work {
 			text-align: center;
 			color: #8c8c8c;
 			font-size: 16px;
-			padding: 0 50px;
 			padding-top: 15px;
 		}
 
 		.title-block--how-work {
 			text-align: center;
-			padding: 0 70px;
 			margin-top: 30px;
 			color:#2a2a2a;
 			font-size: 18px;
@@ -48,8 +47,7 @@
 }
 
 .orange {
-	padding-bottom: 30px;
-    padding-top: 10px;
+	padding: 50px 0;
 	background-image: -webkit-linear-gradient(bottom, rgb(255,93,21) 0%, rgb(251,64,47) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(255,93,21) 0%, rgb(251,64,47) 100%);
 	background-image: linear-gradient(to top, rgb(255,93,21) 0%, rgb(251,64,47) 100%);
