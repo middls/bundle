@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+	border-collapse: collapse;
+}
 @import '_header.scss';
 @import '_sprite.scss';
 @import '_rating.scss';
