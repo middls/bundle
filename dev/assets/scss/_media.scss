@@ -1,12 +1,6 @@
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-	.rating {
-		.fl-col {
-			.invis {
-				display: none;
-			}
-		}
-	}
+	
 }
 
 /* Portrait tablets and medium desktops */
@@ -32,69 +26,6 @@
 			}
 		}
 	}
-
-	.rating {
-		top: -10em;
-
-		.places-block {
-
-			.lips {
-				top: -12px;
-				left: 0;
-			}
-
-			.fl-col {
-				justify-content: space-between;
-				.vis {
-					display: none;
-				}
-
-				.invis {
-					display: flex;
-				}
-
-				.info-about-site {
-					display: flex;
-    				justify-content: space-between;
-    				width: 100%;
-					&::after {
-						left: 138px;
-					}
-				}
-			}
-
-			.stars {
-				padding-left: 0;
-			}
-
-			.pad-lp {
-				padding-left: 45px!important;
-			}
-
-			.container-pic {
-				left: -33px;
-			}
-
-			.wrap-users {
-				padding-left: 35px!important;
-			}
-
-			.buttons-rating {
-				display: flex;
-    			flex-direction: row;
-				margin-top: 30px;
-				margin-left: 12em;
-
-				.btn-to-site {
-					margin-bottom: 0;
-				}
-
-				.btn {
-					margin-left: 10px;
-				}
-			}
-		}
-	}
 }
 
 /* Portrait tablets and small desktops */
@@ -117,7 +48,27 @@
 			display: flex !important;
 		    flex-direction: column;
 		    align-items: center;
-		    padding: 0px 80px;
+			left: 0;
+			top: 0;
+			
+
+			h1  {
+				font-size: 31px;
+				text-align: center; 
+			}
+
+			.destiny {
+				display: flex;
+				flex-direction: column;
+
+				span {
+					margin-top: 12px;
+
+					&:first-child {
+						margin-left: 0;
+					}
+				}
+			}
 		}
 	}
 
@@ -216,7 +167,30 @@
 	.wrap__header--image {
 
 		.image-content {
-			left: 6em;
+			display: flex !important;
+		    flex-direction: column;
+		    align-items: center;
+			left: 0;
+			top: 0;
+			
+
+			h1  {
+				font-size: 31px;
+				text-align: center; 
+			}
+
+			.destiny {
+				display: flex;
+				flex-direction: column;
+
+				span {
+					margin-top: 12px;
+
+					&:first-child {
+						margin-left: 0;
+					}
+				}
+			}
 		}
 	}
 
@@ -307,6 +281,36 @@
 			padding-left: 10px;
 			.header-text {
 				display: none;
+			}
+		}
+	}
+
+	.wrap__header--image {
+
+		.image-content {
+			display: flex !important;
+		    flex-direction: column;
+		    align-items: center;
+			left: 0;
+			top: 0;
+			 
+
+			h1  {
+				font-size: 27px;
+				text-align: center;
+			}
+
+			.destiny {
+				display: flex;
+				flex-direction: column;
+
+				span {
+					margin-top: 12px;
+
+					&:first-child {
+						margin-left: 0;
+					}
+				}
 			}
 		}
 	}
