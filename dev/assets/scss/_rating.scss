@@ -2,6 +2,7 @@
 	position: relative;
 	top: -7.5em;
 	.places-block {
+		margin-bottom: 20px;
 		position: relative;
 		padding: 20px 0px;
 		border-radius: 5px;
@@ -16,7 +17,8 @@
 			background: url('../images/gold-medal.png') no-repeat;
 		}
 		.screen-site-wrap {
-			max-width: 332px;
+			margin-top: 15px;
+			max-width: 234px;
 			height:158px;
 			border-radius: 7px;
 			background: url('../images/screen-site.png') no-repeat;
@@ -32,7 +34,7 @@
 		.list_menu--link {
 			width: 100%;
 			list-style: none;
-			margin: 0;
+			margin: 0 -20px;
 			padding: 0;
 
 			li {
@@ -102,10 +104,10 @@
 			margin: 0;
 			padding: 0;
 			padding-top: 15px;
-			margin-left: -15px;
-    		margin-right: -15px;
+			margin-left: -12px;
+    		margin-right: -12px;
 			li {
-				padding: 0 10px;
+				padding: 0 8px;
 				a {
 				    width: 70px;
 				    height: 140px;
@@ -183,7 +185,7 @@
 
 				.btn {
 					border-radius: 50px;
-					padding : 15px 30px;
+					padding : 13px 30px;
 				}
 
 				.btn-to-site {
@@ -198,9 +200,11 @@
 					border: 1px solid #e9e9e9;
 
 					span {
-					    position: absolute;
-					    right: 15px;
-					    top: 16px;
+					    &::before {
+					    	content:'';
+					    	position: absolute;
+
+					    }
 					}
 				}
 			}
@@ -254,5 +258,78 @@
 			// }
 		}
 	}
-}
 
+	.place-block-min {
+		margin-bottom: 20px;
+		width: 100%;
+		position: relative;
+		padding: 10px 15px;
+		border-radius: 5px;
+		background-color:#fff;
+		-webkit-box-shadow: -7.986px 6.018px 50px 0px rgba(38, 35, 33, 0.05);
+		-moz-box-shadow: -7.986px 6.018px 50px 0px rgba(38, 35, 33, 0.05);
+		box-shadow: -7.986px 6.018px 50px 0px rgba(38, 35, 33, 0.05);
+
+		.rating-number {
+			margin-right: 15px;
+			font-size: 18px;
+			color: #333;
+		}
+
+		.rating-place {
+			color: #333;
+			font-size: 18px;
+		}
+
+		.name-site {
+			a {
+				color: #fa442a;
+			}
+		}
+		.list_menu--link {
+			list-style: none;
+			margin: 0 -20px;
+			padding: 0;
+
+			li {
+				padding: 0 20px;
+				a {
+					color: #2a2a2a;
+					&:hover {
+						text-decoration: none;
+					}
+					.mess {
+						position: relative;
+						&::before {
+							content:'';
+							position: absolute;
+							top: 7px;
+							left: -20px;
+							width: 16px;
+							height :16px;
+							background: url('../images/mess.svg') no-repeat;
+						}
+					}
+					span {
+						color:#333;
+					}
+				}
+
+				.btn-to-join {
+					border-radius: 50px;
+					padding : 13px 30px;
+					font-size: 16px;
+					border: 1px solid #e9e9e9;
+
+				}
+			}
+		}
+	}
+
+	.btn_all-list {
+		border-radius: 50px;
+		padding : 13px 30px;
+		border: 1px solid #e9e9e9;
+		color: #333;
+	}
+}
