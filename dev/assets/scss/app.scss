@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	border-collapse: collapse;
 }
+@import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
 @import '_header.scss';
 @import '_sprite.scss';
 @import '_rating.scss';
@@ -11,4 +12,6 @@
 @import '_no-regis.scss';
 @import '_how-is-working.scss';
 @import '_date-ru-description.scss';
-@import '_feedback.scss'
+@import '_feedback.scss';
+@import '_right-nav-style.scss'
+

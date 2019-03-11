@@ -1,28 +1,62 @@
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-	
+	.masthead {
+		.nav {
+			display: none;
+		}
+	}
 }
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 	.masthead {
-
-		.header-text {
-
-			&::before {
-				left: -60px;
-			}
+		.nav {
+			display: none;
 		}
 	}
 
 	.wrap__header--image {
 
 		.image-content {
-			top: 3em;
-			left: 3em;
 
 			.destiny {
 				margin-left: 40px;
+			}
+		}
+	}
+
+	.rating {
+	    top: -4.5em !important;
+		.places-block {
+
+			.d-f-c {
+				flex-direction: column;
+			}
+
+			.list_menu--link {
+				margin: 0;
+			}
+		}
+
+		.list-users {
+			li {
+				display: none;
+
+				&:first-child,
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(5) {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.feedback {
+
+		.feedback-block {
+			.btn-feedback{
+				display: flex;
 			}
 		}
 	}
@@ -31,20 +65,8 @@
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 	.masthead {
-		.header-text {
-			display: none;
-		}
-
-		.border-vertical {
-			display: none;
-		}
-
 		.menuBurger {
-			display: inline-block;
-
-			.menu-header {
-				display: none;
-			}
+			display: none;
 		}
 
 	}
@@ -74,28 +96,88 @@
 	}
 
 	.rating {
-		display:none;
-		top: -4.55em;
-
-		.invis {
+		top: 0!important;
+		.places-block {
+			flex-direction: column;
+			.screen-site-wrap {
 				display: none;
 			}
 
-		.places-block {
-			padding: 10px 15px;
+			.p-l-15 {
+				padding-left: 0 !important;
+			}
 
 			.lips {
-				left: 20px;
+				display: none;
 			}
 
 			.stars {
 				padding-left: 0;
 			}
 
+			.list_menu--link {
+				margin: 0;
+				align-items: flex-start !important;
+
+				li {
+					padding: 5px 20px;
+
+					.bord-yl {
+						&::after {
+							display: none;
+						}
+					}
+
+					.mess {
+						&::after{
+							display: none;
+						}
+					}
+				}
+			}
+
+			.list-users {
+				li {
+					display: none;
+
+					&:first-child,
+					&:nth-child(2),
+					&:nth-child(3),
+					&:nth-child(4),
+					&:nth-child(5) {
+						display: block;
+					}
+				}
+			}
+
 			.buttons-rating {
 				padding-left: 0;
 				margin-top: 15px;
 			}
+		}
+
+		.place-block-min {
+			flex-direction: column;
+
+			.d-f-c {
+				flex-direction: column;
+			}
+
+			.list_menu--link {
+				flex-direction: column;
+
+				li {
+					padding: 5px 0;
+					.btn-to-join {
+						padding: 5px 20px;
+					}
+				}
+			}
+
+		}
+
+		.all-list {
+			margin-bottom: 10px;
 		}
 	}
 
@@ -139,6 +221,14 @@
 	}
 
 	.mastfooter {
+
+		.menuBurger {
+			display: none;
+		}
+
+		// .border-vertical {
+		// 	display: none !important;
+		// }
 
 	}
 }
@@ -146,22 +236,16 @@
 /* Landscape phones and portrait tablets */
 @media (min-width: 481px) and (max-width: 767px) {
 	.masthead {
+		.menuBurger {
+			display: none;
+		}
 		.header-text {
 			display: none;
 		}
 
 		.border-vertical {
-			display: none;
+			display: none !important;
 		}
-
-		.menuBurger {
-			display: inline-block;
-
-			.menu-header {
-				display: none;
-			}
-		}
-
 	}
 
 	.wrap__header--image {
@@ -182,35 +266,145 @@
 				flex-direction: column;
 
 				span {
-					margin-top: 12px;
+					margin-top: 12px !important;
 				}
 			}
 		}
 	}
 
 	.rating {
-		display:none;
-		top: -4.55em;
-
-		.invis {
+		top: 0;
+		.places-block {
+			flex-direction: column;
+			.screen-site-wrap {
 				display: none;
 			}
 
-		.places-block {
-			padding: 10px 15px;
+			.p-l-15 {
+				padding-left: 0 !important;
+			}
 
 			.lips {
-				left: 20px;
+				display: none;
 			}
 
 			.stars {
 				padding-left: 0;
+			}
+			.d-f-j {
+				justify-content: center !important;
+			}
+
+			.list_menu--link {
+				margin: 0;
+				align-items: flex-start !important;
+
+				li {
+					padding: 5px 20px;
+
+					.bord-yl {
+						&::after {
+							display: none;
+						}
+					}
+
+					.mess {
+						&::after{
+							display: none;
+						}
+					}
+				}
+			}
+
+			.list-users {
+				li {
+					display: none;
+
+					&:first-child,
+					&:nth-child(2),
+					&:nth-child(3) {
+						display: block;
+					}
+				}
 			}
 
 			.buttons-rating {
 				padding-left: 0;
 				margin-top: 15px;
 			}
+		}
+
+		.place-block-min {
+			flex-direction: column;
+
+			.d-f-c {
+				flex-direction: column;
+
+
+			}
+			.list_menu--link {
+				flex-direction: column;
+
+				li {
+					padding: 5px 0;
+					.btn-to-join {
+						padding: 5px 20px;
+					}
+				}
+			}
+
+		}
+
+		.all-list {
+			margin-bottom: 10px;
+		}
+	}
+
+	.wrap__feedback--image {
+
+		.image-content {
+			padding: 41px 10px !important;
+		}
+	}
+
+	.feedback {
+		top: 0 !important;
+
+		.feedback-block {
+			margin-bottom: 10px;
+
+			.logo_rating-site {
+				margin-left: 10px !important;
+			}
+
+			.d-f-c {
+				flex-direction: column;
+			}
+
+			.d-f-c-r {
+				flex-direction: column-reverse;
+				align-items: center;
+			}
+
+			.d-f-j {
+				justify-content: center !important;
+			}
+				.commit-user {
+				p {
+					&::before {
+						display: none;
+					}
+				}
+			}
+
+			.btn-feedback {
+			    margin-bottom: 20px;
+				text-align: center;
+			}
+		}
+
+		.all-list {
+			margin-bottom: 10px;
 		}
 	}
 
@@ -254,6 +448,18 @@
 	}
 
 	.mastfooter {
+
+		.header-text {
+			display: none;
+		}
+
+		.menuBurger {
+			display: none;
+		}
+
+		.border-vertical {
+			display: none !important;
+		}
 
 	}
 
@@ -262,75 +468,17 @@
 /* Landscape phones and smaller */
 @media (min-width: 320px) and (max-width: 480px) {
 	.masthead {
+		.menuBurger {
+			display: none;
+		}
 		.header-text {
 			display: none;
 		}
 
 		.border-vertical {
 			display: none;
-		}
-		.menu {
-			position:relative;
-			display:inline-block;
-
-			.active {
-				display:none;
-			}
-
-			ul {
-				width:100%;
-				position:absolute;
-				top:120%;
-				left:0px;
-				padding:10px 18px;
-				box-shadow:0px 1px 1px rgba(0,0,0,0.15);
-				border-radius:3px;
-				background:#303030;
-
-				&::after {
-					content:'';
-					width:0px;
-					height:0px;
-					position:absolute;
-					top:0%;
-					left:22px;
-					content:'';
-					transform:translate(0%, -100%);
-					border-left:7px solid transparent;
-					border-right:7px solid transparent;
-					border-bottom:7px solid #303030;
-				}
-
-				li {
-					margin:5px 0px 5px 0px;
-					float:none;
-					display:block;
-
-					a {
-						display:block;
-					}
-				}
-			}
-
-			.toggle-nav {
-				padding:20px;
-				float:left;
-				display:inline-block;
-				box-shadow:0px 1px 1px rgba(0,0,0,0.15);
-				border-radius:3px;
-				background:#303030;
-				text-shadow:0px 1px 0px rgba(0,0,0,0.5);
-				color:#777;
-				font-size:20px;
-				transition:color linear 0.15s;
-
-				&:hover {
-					color:#66a992;
-				}
-
-				.active {
-					text-decoration:none;
-				}
+			&::before {
+				display: none;
 			}
 		}
 	}
@@ -353,35 +501,141 @@
 				flex-direction: column;
 
 				span {
-					margin-top: 12px;
+					margin-top: 12px!important;
 				}
 			}
 		}
 	}
 
 	.rating {
-		display:none;
-		top: -4.55em;
-
-		.invis {
+		top: 0;
+		.places-block {
+			flex-direction: column;
+			.screen-site-wrap {
 				display: none;
 			}
 
-		.places-block {
-			padding: 10px 15px;
+			.p-l-15 {
+				padding-left: 0 !important;
+			}
 
 			.lips {
-				left: 20px;
+				display: none;
 			}
 
 			.stars {
 				padding-left: 0;
+			}
+			.d-f-j {
+				justify-content: center !important;
+			}
+
+			.list_menu--link {
+				margin: 0;
+				flex-direction: column;
+				align-items: flex-start !important;
+
+				li {
+					padding: 5px 20px;
+
+					.bord-yl {
+						&::after {
+							display: none;
+						}
+					}
+
+					.mess {
+						&::after{
+							display: none;
+						}
+					}
+				}
+			}
+
+			.list-users {
+				li {
+					display: none;
+
+					&:first-child,
+					&:nth-child(2),
+					&:nth-child(3) {
+						display: block;
+					}
+				}
 			}
 
 			.buttons-rating {
 				padding-left: 0;
 				margin-top: 15px;
 			}
+		}
+
+		.place-block-min {
+			flex-direction: column;
+
+			.d-f-c {
+				flex-direction: column;
+
+
+			}
+			.list_menu--link {
+				flex-direction: column;
+
+				li {
+					padding: 5px 0;
+					.btn-to-join {
+						padding: 5px 20px;
+					}
+				}
+			}
+
+		}
+
+		.all-list {
+			margin-bottom: 10px;
+		}
+	}
+
+	.wrap__feedback--image {
+
+		.image-content {
+			padding: 41px 10px!important;
+		}
+	}
+
+	.feedback {
+		top: 0 !important;
+
+		.feedback-block {
+			margin-bottom: 10px;
+
+			.d-f-c {
+				flex-direction: column;
+			}
+
+			.d-f-c-r {
+				flex-direction: column-reverse;
+				align-items: center;
+			}
+
+			.d-f-j {
+				justify-content: center !important;
+			}
+				.commit-user {
+				p {
+					&::before {
+						display: none;
+					}
+				}
+			}
+
+			.btn-feedback {
+				text-align: center;
+			}
+		}
+
+		.all-list {
+			margin-bottom: 10px;
 		}
 	}
 
@@ -425,7 +679,16 @@
 	}
 
 	.mastfooter {
+		.header-text {
+			display: none;
+		}
 
+		.menuBurger {
+			display: none;
+		}
+
+		.border-vertical {
+			display: none !important;
+		}
 	}
-
 }
