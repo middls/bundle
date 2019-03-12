@@ -1,6 +1,6 @@
 .rating {
 	position: relative;
-	top: -7.5em;
+	margin-top: -40px;
 	.places-block {
 		margin-bottom: 20px;
 		position: relative;
@@ -29,7 +29,7 @@
 
 			.logo_rating-site {
 				display: block;
-				width: 200px;
+				width: 170px;
 				height: 60px;
 				background: url('../images/atolin.png') 0 50% no-repeat;
 			}
@@ -46,7 +46,7 @@
 					position: relative;
 					font-size: 16px;
 					color: #2a2a2a;
-
+					padding: 0 20px;
 					&:hover {
 						text-decoration: none;
 						.mess {
@@ -63,58 +63,64 @@
 							}
 						}
 					}
-					.mess {
-						position: relative;
-						&::before {
-							content:'';
-							position: absolute;
-							top: 7px;
-							left: -20px;
-							width: 16px;
-							height :16px;
-							background: url('../images/mess.svg') no-repeat;
-						}
+				}
 
+				.mess {
+					position: relative;
+					span {
+						position: relative;
+						&::after {
+						content:'';
+							position: absolute;
+							bottom: -3px;
+							left: 0;
+							right: 0;
+							height: 1px;
+							background-color: #f7cf91;
+							transform: translateY(0px);
+							transition: transform  .7s;
+						}
+					}
+					&::before {
+						content:'';
+						position: absolute;
+						top: 6px;
+						left: 0px;
+						width: 16px;
+						height :16px;
+						background: url('../images/mess.svg') no-repeat;
+					}
+				}
+
+				.bord-yl {
+					span {
+						position: relative;
 						&::after {
 							content:'';
 							position: absolute;
 							bottom: -3px;
 							left: 0;
 							height: 1px;
-							width: 73px;
+							right: 0;
 							background-color: #f7cf91;
 							transform: translateY(0px);
 							transition: transform  .7s;
 						}
 					}
+				}
 
-					.bord-yl {
-						&::after {
-							content:'';
-							position: absolute;
-							bottom: -3px;
-							left: 0;
-							height: 1px;
-							width: 141px;
-							background-color: #f7cf91;
-							transform: translateY(0px);
-							transition: transform  .7s;
-						}
-					}
-
-					.pers {
-						position: relative;
-						color: #b5b5b5;
-						cursor: default;
-						&::before {
-							content:'';
-							position: absolute;
-							top: 5px;
-							left: -20px;
-							width: 16px;
-							height: 16px;
-							background: url('../images/pers.svg') no-repeat;
-						}
+				.pers {
+					position: relative;
+					color: #b5b5b5;
+					cursor: default;
+					&::before {
+						content:'';
+						position: absolute;
+						top: 3px;
+						left: 0px;
+						width: 16px;
+						height: 16px;
+						background: url('../images/pers.svg') no-repeat;
 					}
 				}
 			}
@@ -204,6 +210,8 @@
 		    overflow: hidden;
 		    text-overflow: ellipsis;
 		    height: 72px;
+		    font-size: 15px;
+    		margin-top: 15px;
 		}
 
 		.buttons-rating {
@@ -286,15 +294,6 @@
 					color: #ffd04b;
 			  	}
 			}
-
-			// #review_stars-yellow {
-			// 	position: absolute;
-			// 	top: 0;
-			// 	left: 0;
-			// 	span {
-			// 		color:#ffd04b;
-			// 	}
-			// }
 		}
 	}
 
@@ -354,20 +353,22 @@
 					&:hover {
 						text-decoration: none;
 					}
-					.mess {
-						position: relative;
-						&::before {
-							content:'';
-							position: absolute;
-							top: 7px;
-							left: -20px;
-							width: 16px;
-							height :16px;
-							background: url('../images/mess.svg') no-repeat;
-						}
-					}
 					span {
 						color:#333;
+					}
+				}
+
+				.mess {
+					padding: 0 20px;
+					position: relative;
+					&::before {
+						content:'';
+						position: absolute;
+						top: 7px;
+						left: 0px;
+						width: 16px;
+						height :16px;
+						background: url('../images/mess.svg') no-repeat;
 					}
 				}
 

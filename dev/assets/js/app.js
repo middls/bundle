@@ -1,9 +1,17 @@
-//=require raty.js
-jQuery(document).ready(function() {
-	jQuery('.toggle-nav').click(function(e) {
-		jQuery(this).toggleClass('active');
-		jQuery('.menu ul').toggleClass('active');
+$(function() {
 
-		e.preventDefault();
-	});
-});
+	$('select').selectmenu()
+
+	$('.btn-menu').on('click', function() {
+		$('.menu-catalog').addClass('active')
+		$('html').css({ overflowY: 'hidden' })
+		return false
+	})
+
+	$('.menu-catalog-head').on('click', function() {
+		$('.menu-catalog').removeClass('active')
+		$('html').css({ overflowY: 'inherit' })
+		return false
+	})
+
+})

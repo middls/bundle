@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	border-collapse: collapse;
 }
-@import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 @import '_header.scss';
 @import '_sprite.scss';
 @import '_rating.scss';
@@ -13,5 +13,4 @@
 @import '_how-is-working.scss';
 @import '_date-ru-description.scss';
 @import '_feedback.scss';
-@import '_right-nav-style.scss'
 

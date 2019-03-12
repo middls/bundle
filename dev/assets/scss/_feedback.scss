@@ -1,8 +1,8 @@
 .wrap__feedback--image {
 	position: relative;
 	.wrap-image {
-		min-height: 438px;
 		background: url('../images/feedback-img.png') no-repeat;
+		background-size: cover;
 
 		.image-content {
 			z-index: 2;
@@ -21,7 +21,8 @@
 
 .feedback {
 	position: relative;
-	top: -16em;
+	margin-top: -50px;
+	margin-bottom: 30px;
 	.feedback-block {
 		background-color:#fff;
 		padding: 10px 15px;
@@ -49,41 +50,6 @@
 				font-size: 30px;
 				margin-right: 20px;
 			}
-
-			.star { 
-			  border: none;
-			  float: left;
-			}
-
-			.star > input { display: none; } 
-			.star> label:before { 
-			  margin: 5px;
-			  font-size: 1.25em;
-			  font-family: FontAwesome;
-			  display: inline-block;
-			  content: "\f005";
-			}
-
-			.star > .half:before { 
-			  content: "\f089";
-			  position: absolute;
-			}
-
-			.star > label {
-			  color: #ddd;
-			 float: right;
-			 margin-bottom: 0 !important;
-			}
-
-			.star > input:checked ~ label,
-			.star:not(:checked) > label:hover,
-			.star:not(:checked) > label:hover ~ label { color: #FFD700;  } 
-
-			.star > input:checked + label:hover, 
-			.star > input:checked ~ label:hover,
-			.star > label:hover ~ input:checked ~ label, 
-			.star > input:checked ~ label:hover ~ label { color: #FFED85;  } 
-
 		}
 
 		.review_stars_wrap {
@@ -280,24 +246,18 @@
     			flex-direction: column;
     			align-items: center;
 				.smile-img {
+					position: relative;
 					width: 40px;
 					height: 40px;
-					border-radius:10px;
 					background: url('../images/smile-img.svg') 50% 50% no-repeat;
-					.smile-img-color {
-						position: relative;
-						width: 40px;
-						height: 100%;
-						border-radius:50%;
-						// &::before {
-						// 	content:'';
-						// 	position: absolute;
-						// 	top: 0;
-						// 	width: 40px;
-						// 	height: 100%;
-						// 	border-radius: 50%;
-						// 	background-color: red;
-						// }
+					i {
+						position: absolute;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						z-index: 2;
+						background-color: #0bb91b;
+						border-radius: 50%;
 					}
 				}
 				span {
