@@ -1,19 +1,25 @@
 .wrap__feedback--image {
 	position: relative;
 	.wrap-image {
-		background: url('../images/feedback-img.png') no-repeat;
-		background-size: contain;
+		padding: 28px 0;
+		background: url('../images/feedback-img.png') 50% 50% no-repeat;
+		background-size: cover;
 
 		.image-content {
 			z-index: 2;
 			color: #fff;
-			padding: 41px 140px;
-			margin: 0 -15px;
+			padding: 50px 0;
+			margin-bottom: 320px;
 
 			h1 {
 				font-size: 36px;
 				font-weight: 700;
 				line-height: 48px;
+				margin: 0;
+			}
+
+			p {
+				margin: 0;
 			}
 		}
 	}
@@ -21,7 +27,7 @@
 
 .feedback {
 	position: relative;
-	margin-top: -50px;
+	margin-top: -334px;
 	margin-bottom: 30px;
 	.feedback-block {
 		background-color:#fff;
@@ -117,17 +123,6 @@
 			margin-top: 10px;
 			color: #8c8c8c;
 			position: relative;
-
-			&::before {
-				content:'';
-				position: absolute;
-				width: 6px;
-				height: 120px;
-				top: 60px;
-    			right: -40px;
-				background-color: rgb(218, 218, 218);
-				border-radius: 10px;
-			}
 		}
 
 		.btn-feedback {
@@ -239,7 +234,7 @@
 			.count {
 				color: #333;
 				font-size: 30px;
-			    padding: 0 10px;
+			    padding: 0 5px;
 			}
 			.wrap-emoji {
 			    display: flex;
@@ -256,8 +251,7 @@
 						right: 0;
 						bottom: 0;
 						z-index: 2;
-						background-color: #0bb91b;
-						border-radius: 50%;
+						background: url('../images/green-smile.svg') 50% 50% no-repeat;
 					}
 				}
 				span {
@@ -267,7 +261,7 @@
 			}
 			.rating-percent {
 				color: #14bb23;
-				padding: 10px 10px
+				padding: 10px 5px
 			}
 
 			.red {

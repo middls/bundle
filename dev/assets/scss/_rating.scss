@@ -1,6 +1,7 @@
 .rating {
 	position: relative;
-	margin-top: -40px;
+	margin-top: -142px;
+	margin-bottom: 30px;
 	.places-block {
 		margin-bottom: 20px;
 		position: relative;
@@ -46,31 +47,27 @@
 					position: relative;
 					font-size: 16px;
 					color: #2a2a2a;
-					padding: 0 20px;
+					padding: 0 19px;
 					&:hover {
 						text-decoration: none;
-						.mess {
-							&::after {
-								transform: translateY(10px);
-								transition: transform  .7s;
-							}
-						}
 
-						.bord-yl {
+					}
+				}
+
+				.mess {
+					position: relative;
+					&:hover {
+						span {
 							&::after {
 								transform: translateY(10px);
 								transition: transform  .7s;
 							}
 						}
 					}
-				}
-
-				.mess {
-					position: relative;
 					span {
 						position: relative;
 						&::after {
-						content:'';
+							content:'';
 							position: absolute;
 							bottom: -3px;
 							left: 0;
@@ -93,6 +90,14 @@
 				}
 
 				.bord-yl {
+					&:hover {
+						span {
+							&::after {
+								transform: translateY(10px);
+								transition: transform  .7s;
+							}
+						}
+					}
 					span {
 						position: relative;
 						&::after {
@@ -246,11 +251,16 @@
 					}
 
 					span {
-					    &::before {
-					    	content:'';
-					    	position: absolute;
-
-					    }
+						position: relative;
+						&::before {
+							content: '';
+							position: absolute;
+						    top: 2px;
+    						left: 130px;
+							width: 16px;
+							height: 16px;
+							background: url('../images/arrow-right-solid.svg') no-repeat;
+						}
 					}
 				}
 			}
@@ -364,7 +374,7 @@
 					&::before {
 						content:'';
 						position: absolute;
-						top: 7px;
+						top: 4px;
 						left: 0px;
 						width: 16px;
 						height :16px;
