@@ -2,7 +2,7 @@
 	position: relative;
 	.wrap-image {
 		background: url('../images/feedback-img.png') no-repeat;
-		background-size: cover;
+		background-size: contain;
 
 		.image-content {
 			z-index: 2;

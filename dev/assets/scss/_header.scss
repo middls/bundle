@@ -1,8 +1,4 @@
-.masthead {
-	-webkit-box-shadow: 0.192px 10.998px 21px 0px rgba(0, 0, 0, 0.18);
-	-moz-box-shadow: 0.192px 10.998px 21px 0px rgba(0, 0, 0, 0.18);
-	box-shadow: 0.192px 10.998px 21px 0px rgba(0, 0, 0, 0.18);
-	.menu-catalog {
+.menu-catalog {
 		  position: fixed;
 		  left: 0;
 		  top: 0;
@@ -85,6 +81,11 @@
 		  -o-transform: translateX(0);
 		  transform: translateX(0);
 	}
+
+.masthead {
+	-webkit-box-shadow: 0.192px 10.998px 21px 0px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0.192px 10.998px 21px 0px rgba(0, 0, 0, 0.18);
+	box-shadow: 0.192px 10.998px 21px 0px rgba(0, 0, 0, 0.18);
 }
 
 .masthead,
@@ -103,7 +104,7 @@
 				width: 245px;
 				height:51px;
 				background: url('../images/logo-header.png') 50% 50% no-repeat;
-				background-size: cover;
+				background-size: contain;
 			}
 		}
 
@@ -156,7 +157,7 @@
 	.wrap-image {
 	    padding: 123px;
 		background: url('../images/header-image.jpg') 0 97% no-repeat;
-		background-size: cover;
+		background-size: contain;
 
 		.image-content {
 			z-index: 2;
