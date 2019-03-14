@@ -2,11 +2,13 @@
 	background: #fff;
 	padding: 50px 0;
 	.title-date-ru {
-		color: #2a2a2a;
-		font-weight: 700;
-		h3 {
+
+		.title {
+			text-transform: uppercase;
 			font-size: 30px;
-			line-height: 1.5;
+			color: #2a2a2a;
+			font-weight: 500;
+			line-height: 1.6;
 		}
 	}
 
