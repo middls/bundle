@@ -3,8 +3,11 @@
 	padding: 50px 0;
 	.title-date-ru {
 		color: #2a2a2a;
-		font-size: 30px;
 		font-weight: 700;
+		h3 {
+			font-size: 30px;
+			line-height: 1.5;
+		}
 	}
 
 	.wrap {
